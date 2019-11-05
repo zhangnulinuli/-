@@ -2,6 +2,7 @@
 node_modules
 .vscode
 /dist
+*.sqlite
 
 # local env files
 .env.local

@@ -7,9 +7,7 @@ const { sequelize } = require('./modules')
 app.use(bodyParser.json())
 app.use(morgan('combined'))
 
-app.get('/api', (req, res) => {
-  res.send({ msg: 'hello 张张张' })
-})
+require('./router.js')(app) // 引入路由
 
 app.post('/users', (req, res) => {
   console.log(req.body)
